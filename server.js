@@ -104,5 +104,8 @@ app.post('/webhook', async (req, res) => {
   })();
 });
 
-const port = process.env.PORT || 3000;
-app.listen(port, () => console.log(`Listening on ${port}`));
+onst port = process.env.PORT || 3000;
+
+app.listen(port, '0.0.0.0', () => {
+  console.log(`Listening on ${port}`);
+});
